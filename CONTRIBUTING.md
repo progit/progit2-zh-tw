@@ -1,37 +1,36 @@
-# Contributing to Pro Git (2nd Edition)
+# 貢獻到 Pro Git (繁體中文第二版)
 
 
-## Licensing
+## 授權
 
-By opening a pull request to this repository, you agree to provide your work under the [project license](LICENSE.asc).
-Also, you agree to grant such license of your work as is required for the purposes of future print editions to @ben and @schacon.
-Should your changes appear in a printed edition, you'll be included in the [contributors list](book/contributors.asc).
+在您在本倉儲開啟一個拉取要求 (pull request) 時，您就同意以本專案的授權來提供你的著作。
+同時，您也同意授權 @ben 和 @schacon 未來印刷版本所需的必要著作權。
+只要你的修改被使用在印刷版本中時，你將會被列在 [貢獻者清單](book/contributors.asc) 中。
 
-## Small Corrections
+## 小修正
 
-Errata and basic clarifications will be accepted if we agree that they improve the content. You can also open an issue so we can figure out how or if it needs to be addressed.
+如果我們同意您提供的勘誤或基礎說明可以改善本書的內容，我們將會進行採用。你可以開啟一個議題 (issue) 以便我們可以知道是否需要解決或如何修正它們。
 
-If you've never done this before, the [flow guide](https://guides.github.com/introduction/flow/) might be useful.
+如果您以前沒做過類似的事情，您可以參考 [flow guide](https://guides.github.com/introduction/flow/)。
 
-## Large Rewrites
+## 大量重寫
 
-Open an issue for discussion before you start. These changes tend to be very subjective, often only clarifying things for some small percentage of people and it's rarely worth the time to accept them. Professional copy editors have already reviewed this content multiple times so while you may have somewhat better taste and grammar than we do it's unlikely that your prose is going to be *so* much better that it's worth changing vast swaths of text.
+請務必在您開始前先開啟一個議題來進行討論。如果您所提議的修改是非常主觀的東西，或者只是針對了少部分的人，那麼這些修改並不值得被採用。專業的編輯已經多次審視這些內容，所以如果您覺得某部分有比我們更好的語意或文法，而且我們也認同這修改比原本的好非常多，這才會值得我們大量重寫並採用您的文章。
 
-## Figures
+## 圖片
 
-The images in this book were generated using [Sketch 3](http://bohemiancoding.com/sketch/), with the [included sketchbook file](diagram-source/progit.sketch).
+在本書使用的圖片是透過 [Sketch 3](http://bohemiancoding.com/sketch/) 所產生的，此為 [引用的 sketchbook 檔案](diagram-source/progit.sketch)。
 
-To add a figure:
+如何新增圖片：
 
-1. Add a page to the sketchbook. Try to use the included symbols wherever possible.
-1. Add a "slice" to your page. Give it a name that matches the destination PNG filename, relative from the root of the source directory.
-1. Make sure your slice is set to export at "800w".
+1. 在 sketchbook 中新增一頁。並盡可能的使用被引用的符號。
+1. 在頁面中心新增切片 (slice)，並且根據 PNG 圖片在專案目錄的相對路徑填上名稱。
+1. 確定您的切片以「800w」匯出。
 
+## 翻譯
 
-## Translations
+我們非常鼓勵把本書翻譯成其他語言。第二版書的管理方式和第一版有些微差異。我們現在把每一種翻譯版本保存在各自的倉儲內，並且透過 Atlas 自動建置。這正是上一版難以做到的事情。
 
-Translations to other languages are highly encouraged but handled a little differently than the first edition. We now keep each translation in a separate repository and automatically build the output files through Atlas. This was something that was really difficult in the last edition.
+因為每個翻譯版本都有不同的倉儲，我們便可以讓每個翻譯版本都有不同的維護者。然後 Pro Git 團隊就只需要簡單的拉取並為每個翻譯版本進行建置即可。為了可以自動建置，翻譯倉儲必須在 [GitHub 的 progit 組織](https://github.com/progit)底下。
 
-Since each translation is a different repository, we can also have different maintainers for each project. The Pro Git team simply pulls them in and builds them for the translation teams. To get automatic builds, translations repositories will have to be under the [`progit` organization on GitHub](https://github.com/progit).
-
-You can find out information on all the current translations and information on how to start your own at http://progit.org/translations.
+你可以在 ttp://progit.org/translations 找到本書目前所有的翻譯版本，並且找到如何開始一個新的翻譯版本的資訊。
