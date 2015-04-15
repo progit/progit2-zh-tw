@@ -1,5 +1,6 @@
 # 貢獻到 Pro Git (繁體中文第二版)
 
+在翻譯之前，請務必閱讀 **[TRANSLATION_NOTES](TRANSLATION_NOTES.asc)**
 
 ## 授權
 
@@ -33,4 +34,4 @@
 
 因為每個翻譯版本都有不同的倉儲，我們便可以讓每個翻譯版本都有不同的維護者。然後 Pro Git 團隊就只需要簡單的拉取並為每個翻譯版本進行建置即可。為了可以自動建置，翻譯倉儲必須在 [GitHub 的 progit 組織](https://github.com/progit)底下。
 
-你可以在 ttp://progit.org/translations 找到本書目前所有的翻譯版本，並且找到如何開始一個新的翻譯版本的資訊。
+你可以在 http://progit.org/translations 找到本書目前所有的翻譯版本，並且找到如何開始一個新的翻譯版本的資訊。
