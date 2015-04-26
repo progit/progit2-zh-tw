@@ -1,7 +1,7 @@
 {
-  "code": "en",
-  "language": "English",
-  "maintainers": ["schacon"],
+  "code": "zh-tw",
+  "language": "Traditional Chinese",
+  "maintainers": ["taichunmin"],
   "files": {
     "01-introduction": {
       "1-introduction.asc": 100,
