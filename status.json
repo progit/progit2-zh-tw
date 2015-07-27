@@ -18,37 +18,37 @@
       "sections/aliases.asc": 100,
       "sections/getting-a-repository.asc": 100,
       "sections/recording-changes.asc": 0,
-      "sections/remotes.asc": 0,
-      "sections/tagging.asc": 0,
-      "sections/undoing.asc": 0,
-      "sections/viewing-history.asc": 0
+      "sections/remotes.asc": 1,
+      "sections/tagging.asc": 1,
+      "sections/undoing.asc": 1,
+      "sections/viewing-history.asc": 1
     },
     "03-git-branching": {
-      "1-git-branching.asc": 0,
-      "sections/basic-branching-and-merging.asc": 0,
-      "sections/branch-management.asc": 0,
-      "sections/nutshell.asc": 0,
-      "sections/rebasing.asc": 0,
-      "sections/remote-branches.asc": 0,
-      "sections/workflows.asc": 0
+      "1-git-branching.asc": 1,
+      "sections/basic-branching-and-merging.asc": 1,
+      "sections/branch-management.asc": 1,
+      "sections/nutshell.asc": 1,
+      "sections/rebasing.asc": 1,
+      "sections/remote-branches.asc": 1,
+      "sections/workflows.asc": 1
     },
     "04-git-server": {
-      "1-git-server.asc": 0,
-      "sections/generating-ssh-key.asc": 0,
-      "sections/git-daemon.asc": 0,
-      "sections/git-on-a-server.asc": 0,
-      "sections/gitlab.asc": 0,
-      "sections/gitweb.asc": 0,
-      "sections/hosted.asc": 0,
-      "sections/protocols.asc": 0,
-      "sections/setting-up-server.asc": 0,
-      "sections/smart-http.asc": 0
+      "1-git-server.asc": 1,
+      "sections/generating-ssh-key.asc": 1,
+      "sections/git-daemon.asc": 1,
+      "sections/git-on-a-server.asc": 1,
+      "sections/gitlab.asc": 1,
+      "sections/gitweb.asc": 1,
+      "sections/hosted.asc": 1,
+      "sections/protocols.asc": 1,
+      "sections/setting-up-server.asc": 1,
+      "sections/smart-http.asc": 1
     },
     "05-distributed-git": {
-      "1-distributed-git.asc": 0,
-      "sections/contributing.asc": 0,
-      "sections/distributed-workflows.asc": 0,
-      "sections/maintaining.asc": 0
+      "1-distributed-git.asc": 1,
+      "sections/contributing.asc": 1,
+      "sections/distributed-workflows.asc": 1,
+      "sections/maintaining.asc": 1
     },
     "06-github": {
       "1-github.asc": 100,
