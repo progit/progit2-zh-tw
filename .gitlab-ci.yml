@@ -1,0 +1,54 @@
+stages:
+  - build
+  - deploy
+
+image: registry.gitlab.com/taichunmin/docker-compose-git:latest
+
+cache:
+  key: "$CI_PIPELINE_ID"
+  paths:
+    - public/
+
+build-docker:
+  stage: build
+  services:
+    - docker:dind
+  tags:
+    - docker
+  script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker-compose -f docker-build.yml build
+    - docker-compose -f docker-build.yml push
+    - docker-compose -f docker-build.yml down --rmi all
+  only:
+    - web
+
+build-book:
+  stage: build
+  image: registry.gitlab.com/taichunmin/progit2-zh-tw:latest
+  tags:
+    - docker
+  script:
+    - mkdir images
+    - cp book/*/images/* images/
+    - asciidoctor progit.asc || true
+    - asciidoctor-pdf progit.asc || true
+    - asciidoctor-epub3 progit.asc || true
+    - asciidoctor-epub3 -a ebook-format=kf8 progit.asc || true
+    - mkdir public
+    - cp progit.{html,pdf,epub} progit-kf8.epub public/ || true
+    - cp -r images/ public/
+    - ls public
+
+pages:
+  stage: deploy
+  script:
+    - ls public
+  tags:
+    - docker
+  artifacts:
+    when: always
+    paths:
+      - public
+  only:
+    - master
