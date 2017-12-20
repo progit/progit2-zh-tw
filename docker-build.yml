@@ -1,0 +1,6 @@
+version: '2'
+
+services:
+  progit2:
+    build: ./progit2-docker
+    image: registry.gitlab.com/taichunmin/progit2-zh-tw:latest

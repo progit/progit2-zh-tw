@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  progit2:
+    image: registry.gitlab.com/taichunmin/progit2-zh-tw:latest
+    volumes:
+      - ./:/root
+    tty: true
+    stdin_open: true
+    networks:
+      - backend
+networks:
+  backend:
+    driver: "bridge"
