@@ -36,7 +36,8 @@ build-book:
     - asciidoctor-epub3 progit.asc || true
     - asciidoctor-epub3 -a ebook-format=kf8 progit.asc || true
     - mkdir public
-    - cp progit.{html,pdf,epub} progit-kf8.epub public/ || true
+    - cp progit.{pdf,epub} progit-kf8.epub public/ || true
+    - cp progit.html public/index.html
     - cp -r images/ public/
     - ls public
 
