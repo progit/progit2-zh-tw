@@ -1,4 +1,5 @@
 stages:
+  - docker
   - build
   - deploy
 
@@ -10,7 +11,7 @@ cache:
     - public/
 
 build-docker:
-  stage: build
+  stage: docker
   services:
     - docker:dind
   tags:
