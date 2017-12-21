@@ -32,7 +32,7 @@ build-book:
     - mkdir images
     - cp book/*/images/* images/
     - asciidoctor progit.asc || true
-    - asciidoctor-pdf progit.asc || true
+    - asciidoctor-pdf -r asciidoctor-pdf-cjk-kai_gen_gothic -a pdf-style=KaiGenGothicTW progit.asc || true
     - asciidoctor-epub3 progit.asc || true
     - asciidoctor-epub3 -a ebook-format=kf8 progit.asc || true
     - mkdir public
